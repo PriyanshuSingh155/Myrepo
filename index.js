@@ -1,8 +1,11 @@
-import express from 'express';
-const server=express();
-server.get('/',(req,res)=>{
-    res.send("Welcome to 3200");
-});
-server.listen(4000, () => {
-    console.log("server is listening on 3200");
-});
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello Students...')
+})
+
+app.listen(4000, ()=>{
+    console.log("Started server");
+}
+)
